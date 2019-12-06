@@ -11,6 +11,8 @@ RESCUE_TIMEOUT = 30
 TRACK_OFFSET = 15
 DATASET_PATH = 'drive_data'
 
+DENSE_CLASS_DISTRIBUTION = [0.52683655, 0.02929112, 0.4352989, 0.0044619, 0.00411153]
+
 
 class SuperTuxDataset(Dataset):
     def __init__(self, dataset_path=DATASET_PATH, transform=dense_transforms.ToTensor()):
